@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,73 +10,125 @@ body {
 }
 
 header{
-    width: 100%;
-    height: 100vh;
-    font-size: 40px;
-    color: white;
-    background-image: url('gambar1.jpg');
-    background-size: cover;
+    background-color: lightgrey;
+    font-size: 30px;
+    color: black;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 main {
-    height: 100vh;
     display: flex;
+    justify-content: space-between;
 }
 nav{
-    background-color: rgba(0, 0, 0, 0.25);
-    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 25px;
+    min-height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
-
 .logoNav{
     font-size: 25px;
-    color: blue;
+    color: white;
     text-transform: uppercase;
     font-weight: 600;
-    cursor: pointer;
+    cursor: default;
 }
 
+.logoNav:hover {
+    text-decoration: underline;
+}
 .menuNav{
     display: flex;
     list-style: none;
     gap: 2rem;
     padding-right: 25px;
 }
-
 nav li a {
     text-decoration: none;
     color: black;
 }
-
-sidebar{
-  
+.login {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 20px;
 }
 
-.logoKelas{
-    width: 200px;
+.kiri {
+    margin-left: 50px;
+}
+.sebelahKiri{
+    display: flex;
+    margin-top: 5px;
+    padding: 10px 10px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    border-top: 2px solid;
+}
+input {
+    width: 100%;
+    margin: 2px;
+    border: 1.5px solid black;
+    border-radius:  5px;
+}
+label {
+    font-size: 16x;
+    font-weight: 500;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    width: 350px;
+    background: lightblue;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.gambar1{
+    width: 810px;
+}
+
+.foto{
+    background-color: white;
+    padding: 10px 10px;
+    margin-top: 5px;
 }
 
 aside{
-    height: fit-content;
     background-color: aqua;
     display: flex;
     gap: 2rem;
+    border-radius: 10px;
 }
-
+.aside {
+    background-color: lightgoldenrodyellow;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
+    padding: 10px 10px;
+    height: fit-content;
+}
+.logoKelas{
+    width: 280px;
+    border-radius: 10px;
+}
 aside li{
     list-style: none;
 }
 
 footer{
     background-color: rgba(0, 0, 0, 0.25);
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
